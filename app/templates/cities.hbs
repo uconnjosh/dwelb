@@ -1,0 +1,9 @@
+<br />
+<br />
+<ul>
+{{#each model as |city|}}
+  <li>{{#link-to 'city' city}}{{city.name}}{{/link-to}}</li>
+{{/each}}
+</ul>
+
+{{outlet}}
