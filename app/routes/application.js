@@ -13,6 +13,8 @@ export default Route.extend({
   * Hooks
   **/
   beforeModel(/*transition*/) {
+    window.foobar = this
+    this.transitionTo('cities')
   },
 
   /**
