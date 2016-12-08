@@ -1,0 +1,13 @@
+<h1>{{model.name}}</h1>
+<br />
+<br />
+{{model.description}}
+<br />
+<br />
+<ul>
+  {{#each model.neighborhoods as |hood|}}
+    <li>{{#link-to 'city.neighborhood' hood}}{{hood.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
