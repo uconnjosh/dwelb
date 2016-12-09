@@ -5,6 +5,10 @@ export default function() {
   this.get('/cities')
   this.get('/cities/:id')
   this.get('/neighborhoods/:id')
+  this.get('/users')
+  this.get('/users/:id')
+  this.get('/interests')
+  this.get('/interests/:id')
 
   // These comments are here to help you get started. Feel free to delete them.
 

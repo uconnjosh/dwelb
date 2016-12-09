@@ -29,4 +29,20 @@ export default function(server) {
     description: "Young families meets hipsters... from Monday Funday in Colonel Summers park to a nice Italian dinner at Accanto!",
     city: portland
   })
+
+  let christine = server.create('user', {
+    name: 'Christine',
+    gender: 'F',
+    age: 25
+  })
+
+  let interest = server.create('interest', {
+    user: christine,
+    neighborhood: pearl,
+    desiredMoveIn: new Date(2017, 0),
+    desiredMonths: 12,
+    minimumRoommateAge: 22,
+    maximumRoommateAge: 35,
+    genderPreference: 'F'
+  })
 }
