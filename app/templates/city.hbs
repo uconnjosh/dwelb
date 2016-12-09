@@ -6,7 +6,7 @@
 <br />
 <ul>
   {{#each model.neighborhoods as |hood|}}
-    <li>{{#link-to 'city.neighborhood' hood}}{{hood.name}}{{/link-to}}</li>
+    <li>{{#link-to 'city.neighborhood' hood.id}}{{hood.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
 

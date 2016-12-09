@@ -2,3 +2,22 @@
 <br />
 <br />
 {{model.description}}
+<br />
+<br />
+<p>People interested in {{model.name}}</p>
+<br />
+{{#each model.interests as |interest| }}
+  <strong>{{interest.user.name}}</strong> ({{interest.user.age}} years old)
+  <br />
+  Looking to move around: {{interest.desiredMoveIn}}
+  |
+  Wants to stay for: {{interest.desiredMonths}} months
+  |
+  Prefers to live with: {{interest.genderPreference}}
+  |
+  No younger than: {{interest.minimumRoommateAge}}
+  |
+  No older than: {{interest.maximumRoommateAge}}
+  <br />
+  <button>Message {{interest.user.name}}</button>
+{{/each}}
